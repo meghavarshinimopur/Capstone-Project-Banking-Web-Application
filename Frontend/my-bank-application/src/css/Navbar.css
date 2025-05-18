@@ -1,0 +1,214 @@
+/* Navbar Styling */
+.custom-navbar {
+  padding: 10px 40px;
+  font-weight: bold;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+  height: 35px;
+  margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item {
+  margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  font-size: 16px;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* Underline Effect */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 5px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Icons Section */
+.nav-icons a {
+  color: black;
+  margin-left: 20px;
+  font-size: 22px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-icons a:hover {
+  color: #007bff;
+}
+
+/* Tooltip Styling */
+.tooltip-inner {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tooltip-arrow::before {
+  border-top-color: #007bff !important;
+}
+
+/* Profile Container */
+.profile-container {
+  position: relative;
+}
+
+.profile-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.profile-container .profile-popup {
+  display: block;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.initials {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  color: #007bff;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.fullname {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-profile, .btn-logout {
+  background: none;
+  border: 2px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-profile:hover, .btn-logout:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 991px) {
+  .profile-popup {
+    top: 100%;
+    left: 100%;
+    right: 0;
+    transform: translateY(10);
+    width: 220px;
+  }
+}
+
+/* Logout Confirmation Modal Styling */
+.modal-footer .btn-secondary, .modal-footer .btn-primary {
+  background: none;
+  border: 2px solid white;
+  padding: 8px 15px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.modal-footer .btn-secondary:hover, .modal-footer .btn-primary:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+.modal-footer .btn-primary {
+  background-color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+/* Modal Footer Styling */
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Modal Styling */
+.modal-dialog {
+  max-width: 400px;
+  margin: 30vh auto;
+}
+
+.modal-content {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modal-header {
+  border-bottom: 2px solid #007bff;
+}
+
+.modal-title {
+  color: #007bff;
+}
+
+.close {
+  color: #007bff;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+
+/* Modal Backdrop Styling */
+.modal.fade.show {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}

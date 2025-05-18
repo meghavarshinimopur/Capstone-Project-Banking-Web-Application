@@ -1,0 +1,93 @@
+.card-container {
+    width: 400px;
+    height: 250px;
+    margin: 20px auto;
+    padding: 30px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: url('../assets/debitcard.avif') no-repeat center center;
+    background-size: cover;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Other elements remain unchanged */
+.card-logo {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.card-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.card-number {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card-details .name,
+.card-details .expiry,
+.card-details .cvv {
+    font-size: 0.9rem;
+}
+
+.card-details .name {
+    font-weight: bold;
+}
+
+.chip {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    background: url('https://cdn-icons-png.flaticon.com/128/9334/9334627.png') no-repeat center center;
+    background-size: contain;
+}
+
+.toggle-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Container setup: responsive layout without resizing cards */
+.cards-inline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center cards on all screens */
+    margin: 20px;
+    gap: 20px;
+}
+
+.cards-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 300px; /* allows it to stack if screen is very small */
+    margin: 10px;
+}

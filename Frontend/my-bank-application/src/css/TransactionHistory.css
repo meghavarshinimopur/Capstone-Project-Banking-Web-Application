@@ -1,0 +1,92 @@
+.transaction-container,
+.history-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-form,
+.filter-form {
+  margin-bottom: 40px;
+}
+
+.transaction-form input,
+.filter-form input {
+  width: 80%;  /* Adjusted width to make inputs smaller */
+  padding: 6px;  /* Reduced padding for smaller size */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;  /* Smaller font size */
+  margin-bottom: 15px; /* Added margin for better spacing */
+}
+
+.transaction-form .btn,
+.filter-form .btn {
+  width: 80%;  /* Adjusted width for consistency */
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.transaction-form .btn:hover,
+.filter-form .btn:hover {
+  background-color: #0056b3;
+}
+
+.transaction-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-list th,
+.transaction-list td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-list th {
+  background-color: #f2f2f2;
+}
+
+.transaction-list tr:hover {
+  background-color: #f9f9f9;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}

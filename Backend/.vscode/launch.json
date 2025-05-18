@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CapstonebankingwebappApplication<capstonebankingwebapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.capstonebank.capstonebankingwebapp.CapstonebankingwebappApplication",
+            "projectName": "capstonebankingwebapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

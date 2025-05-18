@@ -1,0 +1,63 @@
+/* Modal styles */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  .modal-dialog {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for a 3D effect */
+  }
+  
+  .modal-header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 15px;
+    border-bottom: none; /* Remove default border */
+  }
+  
+  .modal-title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .modal-body img {
+    width: 100px; /* Image size */
+  }
+  
+  .modal-body p {
+    margin: 15px 0 0;
+    font-size: 1.2rem;
+  }
+  
+  .modal-footer {
+    display: none; /* Hide the footer */
+  }
+  
+  /* Fade-in animation for the modal */
+  .modal.fade.show {
+    animation: fadeIn 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

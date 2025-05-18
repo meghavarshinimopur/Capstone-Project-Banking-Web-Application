@@ -1,0 +1,118 @@
+/* Basic Footer Styling */
+.footer {
+  background: linear-gradient(135deg, #007bff, #00bfff); /* Gradient background for a modern look */
+  padding: 15px 20px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  text-align: center;
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer-logo span {
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex: 2;
+  justify-content: center; /* Center the links horizontally */
+}
+
+.footer-links li {
+  display: inline-block;
+  position: relative;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #cce5ff;
+  transform: translateY(-5px); /* Adding a lift effect on hover */
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
+  transition: all 0.3s ease;
+}
+
+.social-icon {
+  font-size: 22px;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #cce5ff;
+  transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+.footer-social a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Decorative Line between Sections */
+.footer-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #cce5ff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.footer:hover .footer-content::before {
+  transform: scaleX(1); /* Show the line on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-social {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,41 @@
+.container-fluid {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Reduced height */
+}
+
+.container {
+  max-width: 100%;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-left h2 {
+  font-size: 1.75rem; /* Slightly reduced */
+}
+
+.content-left h5 {
+  font-size: 1.1rem; /* Slightly reduced */
+}
+
+.content-left p strong {
+  font-size: 40px; /* Reduced from 50px */
+  font-weight: 600;
+}
+
+.row {
+  max-width: 800px; /* Reduce overall width */
+  min-height: 350px; /* Reduce overall height */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  
+}

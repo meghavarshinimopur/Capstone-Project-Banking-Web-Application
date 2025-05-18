@@ -1,0 +1,10 @@
+.sp-red{
+    color: red;
+ }
+ #modalContainer{
+   width: 100%;
+   max-width: 800px;
+   max-height: 80vh;
+ }
+
+ 

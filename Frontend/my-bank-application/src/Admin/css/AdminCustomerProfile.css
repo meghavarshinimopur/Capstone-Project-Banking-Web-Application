@@ -1,0 +1,156 @@
+
+/* Profile Container */
+.profile-container1 {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+p {
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+/* Avatar Styling */
+.avatar {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+
+/* Profile Details Styling */
+.profile-details .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-details .form-group label {
+  width: 40%;
+  text-align: left;
+}
+
+.profile-details .form-group p {
+  width: 60%;
+  text-align: right;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-profile {
+  background-color: #28a745; /* Green for Update Profile */
+  color: #fff;
+}
+
+.change-password {
+  background-color: #dc3545; /* Red for Change Password */
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #333; /* Hover effect */
+  color: #fff;
+}
+.profile-inline-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.inline-fields {
+  width: 48%; /* Adjust width for two fields inline */
+  margin-bottom: 10px;
+}
+
+.inline-fields label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.inline-fields p {
+  font-size: 0.9em;
+  color: #444;
+  margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .profile-container {
+    width: 90%;
+  }
+  .profile-details .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-details .form-group label,
+  .profile-details .form-group p {
+    width: 100%;
+    text-align: left;
+  }
+}

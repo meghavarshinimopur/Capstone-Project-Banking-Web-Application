@@ -1,0 +1,67 @@
+.navbar-custom {
+  background-color: #ffffff; /* White background */
+  padding-left: 10%;
+}
+
+.navbar-custom .nav-link {
+  color: #007bff;
+  margin-right: 20px; /* Adds space between links */
+  text-decoration: none;
+  position: relative;
+  font-weight: bold; /* Bold text */
+  padding-bottom: 2px; /* Less space between word and underline */
+}
+
+.navbar-custom .nav-link::before,
+.navbar-custom .nav-link::after {
+  content: '';
+  display: block;
+  height: 5px; /* Thickness of underline */
+  background: #007bff; /* Underline color */
+  position: absolute;
+  width: 0; /* Initial width */
+  transition: width .3s;
+}
+
+.navbar-custom .nav-link::before {
+  bottom: 0; /* Position of the underline */
+  left: 10%; /* Reduced length from the left */
+}
+
+.navbar-custom .nav-link::after {
+  bottom: 0; /* Position of the underline */
+  right: 10%; /* Reduced length from the right */
+}
+
+.navbar-custom .nav-link:hover::before,
+.navbar-custom .nav-link:hover::after {
+  width: 85%; /* Expand underline from both sides on hover */
+}
+
+.navbar-custom .nav-link:hover::before {
+  left: 10%;
+}
+
+.navbar-custom .nav-link:hover::after {
+  right: 10%;
+  transition-delay: 0s; /* Immediate transition */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #0056b3;
+}
+
+.navbar-custom .navbar-collapse {
+  justify-content: flex-start; /* Align links to the left */
+}
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+  .navbar-custom .navbar-nav {
+    text-align: center;
+  }
+  .navbar-custom .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+}

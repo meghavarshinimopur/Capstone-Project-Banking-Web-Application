@@ -1,0 +1,87 @@
+/* About and Contact Page Styles */
+.about-page, .contact-page {
+    background-color: #f4f6f9;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .intro {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-sections, .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .about-item, .contact-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .about-item:hover, .contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  .about-item i, .contact-item i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .about-item h4, .contact-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .about-item p, .contact-item p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .about-item ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .about-item ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .about-item ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: green;
+  }
+  

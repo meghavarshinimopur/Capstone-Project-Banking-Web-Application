@@ -1,0 +1,66 @@
+/* Agriculture Loan Page CSS (adapted from Fixed Deposit Page) */
+
+.agriculture-loan-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agriculture-loan-form {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.agriculture-loans-list {
+  border: 1px solid #ccc;
+}
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.btn-approve {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-approve:hover {
+  background-color: #0056b3;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #b21f2d;
+}
+
+.empty-message {
+  color: #888;
+  font-size: 16px;
+}
